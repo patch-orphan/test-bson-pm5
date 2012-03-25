@@ -130,7 +130,7 @@ convention as L<Test::JSON> but is not exported by default.
 =head1 SEE ALSO
 
 This module uses L<BSON> and L<Test::Differences>, and is based on
-L<Test::JSON>.
+L<Test::JSON>.  Learn more about BSON at L<http://bsonspec.org/>.
 
 =head1 AUTHOR
 

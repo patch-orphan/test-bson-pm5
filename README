@@ -52,6 +52,7 @@ EXPORTED TESTS
 
 SEE ALSO
     This module uses BSON and Test::Differences, and is based on Test::JSON.
+    Learn more about BSON at <http://bsonspec.org/>.
 
 AUTHOR
     Nick Patch <patch@cpan.org>
