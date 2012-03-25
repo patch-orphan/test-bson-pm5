@@ -1,10 +1,10 @@
-Test::JSYNC Installation
+Test::BSON Installation
 
 # install via cpanminus
-cpanm Test::JSYNC
+cpanm Test::BSON
 
 # install via CPAN shell
-cpan Test::JSYNC
+cpan Test::BSON
 
 # install manually
 perl Build.PL
