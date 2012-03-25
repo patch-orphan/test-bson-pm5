@@ -1,4 +1,3 @@
-#!perl
 use strict;
 use warnings;
 use Test::Tester;
@@ -53,7 +52,7 @@ check_test(
 
 $name = 'Different BSON should fail';
 check_test(
-    sub { bson_is $valid, $different, $name },
+    sub { bson_is $different, $valid, $name },
     {
         ok   => 0,
         name => $name,

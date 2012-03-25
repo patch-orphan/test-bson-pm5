@@ -12,3 +12,4 @@ t/bson.t
 xt/author/kwalitee.t
 xt/author/pod-coverage.t
 xt/author/pod.t
+xt/author/spelling.t

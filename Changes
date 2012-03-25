@@ -1,7 +1,8 @@
+# Revision history for Perl module Test::BSON
 ---
 version: 0.01
 date:    XXX
 changes:
-- First release
-- Forked from Test::JSYNC, which was previously forked from
-  Curtis "Ovid" Poe's Test::JSON
+  - First release
+  - Forked from Test::JSYNC, which was previously forked from
+    Curtis "Ovid" Poe's Test::JSON

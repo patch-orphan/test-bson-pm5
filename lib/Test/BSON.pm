@@ -64,6 +64,8 @@ sub bson_is ($$;$) {
 
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
 Test::BSON - Test BSON documents
@@ -78,8 +80,8 @@ This document describes Test::BSON version 0.01.
 
    use Test::BSON;
 
-   bson_ok $bson,                 'bson is well formed';
-   bson_is $bson, $expected_bson, 'bson matches what we expected';
+   bson_ok $bson,                 'BSON is valid';
+   bson_is $bson, $expected_bson, 'BSON matches what we expected';
 
 =head1 DESCRIPTION
 
@@ -91,9 +93,9 @@ expected.
 
 =head2 bson_ok
 
-Test passes if the string passed is a valid BSON document.
+Test passes if the BSON document is valid.
 
-   bson_ok $bson, 'bson is well formed';
+   bson_ok $bson, 'BSON is valid';
 
 C<is_valid_bson> is provided as an alternative to C<bson_ok> using the same
 naming convention as L<Test::JSON> but is not exported by default.
@@ -103,12 +105,12 @@ naming convention as L<Test::JSON> but is not exported by default.
 Test passes if the two BSON documents are valid and evaluate to the same data
 structure.
 
-   bson_is $bson, $expected_bson, 'bson matches what we expected';
+   bson_is $bson, $expected_bson, 'BSON matches what we expected';
 
 L<Test::Differences> is used to provide easy diagnostics of why the BSON
 documents did not match.  For example:
 
-      Failed test 'bson matches what we expected'
+      Failed test 'BSON matches what we expected'
       in t/bson.t at line 10.
     +----+----------------+----------------+
     | Elt|Got             |Expected        |
@@ -136,15 +138,16 @@ Nick Patch <patch@cpan.org>
 
 =head1 ACKNOWLEDGEMENTS
 
-This module was forked from L<Test::JSON> by Curtis "Ovid" Poe.
+This module was forked from L<Test::JSYNC>, which was forked from
+L<Test::JSON> authored by Curtis “Ovid” Poe.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2011-2012 Nick Patch
+© 2011–2012 Nick Patch
 
-Copyright 2005-2007 Curtis "Ovid" Poe.  All rights reserved.
+© 2005–2007 Curtis “Ovid” Poe
 
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
+This program is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
 
 =cut

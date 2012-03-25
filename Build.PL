@@ -1,5 +1,5 @@
-use 5.006;
 use strict;
+use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
@@ -19,7 +19,6 @@ my $builder = Module::Build->new(
         'parent'            => 0,
         'BSON'              => 0,
         'Test::Differences' => 0.47,
-        'Test::Simple'      => 0.62,
     },
     meta_merge => {
         resources => {
